@@ -1,0 +1,36 @@
+GET http://localhost:3000/recipes
+###
+GET http://localhost:3000/recipes/details/butteredBagel
+###
+GET http://localhost:3000/recipes/details/garlicPast
+###
+POST http://localhost:3000/recipes
+Content-Type: application/json
+
+{
+	"name": "butteredBagel", 
+	"ingredients": [
+		"1 bagel", 
+		"butter"
+	], 
+	"instructions": [
+		"cut the bagel", 
+		"spread butter on bagel"
+	] 
+}
+###
+PUT http://localhost:3000/recipes 
+Content-Type: application/json
+
+{
+	"name": "butteredBagel", 
+	"ingredients": [
+		"1 bagel", 
+		"2 tbsp butter"
+	], 
+	"instructions": [
+		"cut the bagel", 
+		"spread butter on bagel"
+	] 
+}
+###
